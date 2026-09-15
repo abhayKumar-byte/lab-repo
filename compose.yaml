@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: .
+    expose:
+      - "3000"
+    environment:
+      SERVICE_NAME: ${SERVICE_NAME}
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
