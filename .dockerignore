@@ -1,0 +1,8 @@
+.env
+.git
+.gitignore
+compose.yaml
+compose.yaml.save
+nginx.conf
+__pycache__
+*.pyc
