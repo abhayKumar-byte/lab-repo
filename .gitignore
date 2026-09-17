@@ -1,3 +1,6 @@
 .env
 db_password.txt
 compose.yaml.save
+__pycache__/
+*.pyc
+secret-test.txt
