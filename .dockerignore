@@ -6,3 +6,4 @@ compose.yaml.save
 nginx.conf
 __pycache__
 *.pyc
+secret-test.txt
